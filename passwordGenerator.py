@@ -14,8 +14,10 @@ numbers_size = len(numbers) -1
 symbols_size = len(symbols) -1
 
 
+
 for letter in range (0, nr_letters):
   randomLetter = random.randint(0, letters_size)
+  # random.choice(letters)
   password.append(letters[randomLetter])
 
 for symbol in range (0, nr_symbols):
@@ -29,6 +31,8 @@ for number in range (0, nr_numbers):
 
 password_size = len(password) -1
 new_password = ""
+
+# random.shuffle(password)
 
 for char in range (0, password_size):
   password_size = len(password) -1
